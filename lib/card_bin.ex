@@ -17,7 +17,7 @@ defmodule CardBinEx do
    | American Express | `amex`      |
   """
 
-  import CardBinEx.Gettext
+  use Gettext, backend: CardBinEx.Gettext
 
   alias CardBinEx.{
     Brand,
